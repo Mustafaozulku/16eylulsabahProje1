@@ -59,7 +59,7 @@ nav .nav-list{
 .logo-image-wrapper img{
     width: 65px;
     height: 65px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
 nav ul li a {
     color:#3E4B39 ;
