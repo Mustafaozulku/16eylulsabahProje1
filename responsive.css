@@ -1,0 +1,20 @@
+@media screen and (max-width:750px) {
+    .menu-icon{
+        display: block;
+    }
+
+    .hero-image nav .nav-list{
+        display: none;
+        position: absolute;
+        z-index: 999;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background-color: aliceblue;
+        flex-direction: column;
+    }
+    .menu-toggel:checked + .menu-icon + .nav-list{
+        display: flex;
+        max-height: 300px;
+    }
+}
