@@ -3,7 +3,7 @@
         display: block;
     }
 
-    .hero-image nav .nav-list{
+    nav .nav-list{
         display: none;
         position: absolute;
         z-index: 999;
@@ -16,5 +16,95 @@
     .menu-toggel:checked + .menu-icon + .nav-list{
         display: flex;
         max-height: 300px;
+    }
+}
+
+/* ! Footer */
+@media screen and (max-width:1000px){
+    footer .center{
+        order: -1;
+        width: 100%;
+    }
+    footer input{
+        width: 60%;
+    }
+}
+/* ! Anasayfa Main Alanı */
+@media screen and (max-width:700px){
+    .hero-image .main-text{
+        width: 90%;
+        left: 50%;
+    }
+}
+@media screen and (max-width:578px){
+    .hero-image .main-text h1{
+        font-size: 50px;
+    }
+    .hero-image .main-text h3{
+        font-size: 22px;
+    }
+}
+
+/* hakkımızda */
+
+@media screen and (max-width:1000px){
+    .hak-content{
+        flex-direction: column;
+    }
+    .hak-left,
+    .hak-right{
+        width: 100%;
+    }
+}
+
+/* blog section */
+@media screen and (max-width:980px){
+    .section-blog-wrapper{
+        padding-inline: 1%;
+    }
+    .item{
+        width: 250px;
+        height: 300px;
+    }
+}
+
+/* iletişim section */
+@media screen and (max-width:730px){
+    .iletisim-content{
+        flex-direction: column;
+    }
+    .iletisim-content .iletisim-left,
+    .iletisim-content .iletisim-right{
+        width: 100%;
+    }
+}
+
+/* menu section */
+@media screen and (max-width:980px){
+    .menu-section{
+        width: 90%;
+    }
+}
+@media screen and (max-width:650px){
+    .urun{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .urun .icecek-right
+    .urun .icecek-left{
+        width: 100%;
+    }
+       
+    .ayrac{
+        display: none;
+    }
+    .menu-section .yazi{
+        bottom: 50px;
+    }
+    .slider-content img{
+        width: 500px;
+        height: 200px;
+        border: 1px solid white;
     }
 }
